@@ -1,0 +1,23 @@
+include <stdio.h>
+ 
+int main()
+{
+    int a,b;
+    
+    printf (" \n ENter the value of two integers : ");
+    scanf("%d %d", &b, &a);
+    
+    printf("\n \n Output AND = %d", a&b);
+    printf("\n \n Output OR = %d", a|b);
+    printf("\n \n Output Shift Right = %d", a>>b);
+    printf("\n \n Output Shift Left = %d", a<<b);
+    printf("\n \n Output Shift Left = %d", a<<b);
+    printf("\n \n Output + = %d", a+=b);
+    printf("\n \n Output - = %d", a-=b);
+    printf("\n \n Output * = %d", a*=b);
+    printf("\n \n Output / = %d", a/=b);
+    printf("\n \n Output % = %d", a%=b);
+    
+   return 0;
+    
+}
