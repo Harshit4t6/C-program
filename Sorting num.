@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+int count,temp,a,b,n[20];
+printf("numbers to enter :");
+scanf("%d",&count);
+printf("Enter %d number",count);
+for(a=0;a<count;a++)
+scanf("%d",&n[a]);
+for(a=count-2;a>=0;a--)
+{
+    for(b=0;b<=a;b++)
+
+{
+    if(n[b]>n[b+1])
+    {
+        temp=n[b];
+        n[b]=n[b+1];
+        n[b+1]=temp;
+    
+    }
+}
+    
+}
+printf("Sorted elements :");
+for(a=0;a<count;a++)
+{
+printf("%d",n[a]);
+}
+return 0;
+
+}
