@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("Enter the value of a : ");
+   scanf("%d",&a);
+   if(a%5==0  && a%8==0)
+   {
+       printf("The value is Devisible by 5,8 ");
+   }
+   else if (a%5==0)
+   {
+      printf("The value is Devisible by 5 ");
+   }
+   else if (a%8==0)
+   {
+      printf("The value is Devisible by 8 ");
+   }
+  
+   else 
+   {
+       printf("'Not divisible");
+   }
+    return 0;
+}
+
