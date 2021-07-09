@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include<math.h>
+
+
+
+int main() 
+{
+  float a, b, c, disc, rt1, rt2, rP, iP;
+    printf("\n\n\nEnter a, b and c: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    disc = b * b - 4 * a * c;
+printf("\n The value disc is : %f",disc);
+ 
+    if (disc > 0)
+    {
+        rt1 = (-b + sqrt(disc)) / (2 * a);
+        rt2 = (-b - sqrt(disc)) / (2 * a);
+        printf("rt1 = %f and rt2 = %f", rt1, rt2);
+    }
+
+    else if (disc == 0)
+    {
+        rt1 = rt2 = -b / (2 * a);
+        printf(" \n the value of first root : %f", rt1);
+        printf(" \n the value of second root : %f", rt2);
+    }
+
+    else 
+    {
+        rP = -b / (2 * a);
+        iP = sqrt(-disc) / (2 * a);
+         printf(" \n the value of real part root : %f", rP);
+        printf(" \n the value of imaginary root : %f", iP);
+    }
+
+    return 0;
+} 
+
