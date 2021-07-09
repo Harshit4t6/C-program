@@ -1,0 +1,56 @@
+#include <stdio.h>
+int main()
+{
+ int i, j, rows, colum, a[10][10], b[10][10];
+ int Add[10][10], Sub[10][10], Mul[10][10], Mod[10][10];
+ float Div[10][10];
+  
+ printf("\nPlease Enter Number of rows and columns\n");
+ scanf("%d %d", &i, &j);
+ 
+ printf("\nPlease Enter the First Array Elements\n");
+ for(rows = 0; rows < i; rows++)
+  {
+   for(colum = 0;colum < j;colum++)
+    {
+      scanf("%d", &a[rows][colum]);
+    }
+  }
+   
+ printf("\nPlease Enter the Second Array Elements\n");
+ for(rows = 0; rows < i; rows++)
+  {
+   for(colum = 0;colum < j;colum++)
+    {
+      scanf("%d", &b[rows][colum]);
+    }
+
+  }
+  
+ for(rows = 0; rows < i; rows++)
+  {
+   for(colum = 0;colum < j;colum++)
+    {
+      Add[rows][colum] = a[rows][colum] + b[rows][colum];  
+      Sub[rows][colum] = a[rows][colum] - b[rows][colum];  
+      Mul[rows][colum] = a[rows][colum] * b[rows][colum];  
+      Div[rows][colum] = a[rows][colum] / b[rows][colum];  
+      Mod[rows][colum] = a[rows][colum] % b[rows][colum];   
+    }
+  }
+
+ printf("\nAdd\t Sub\t Multi\t Div\t Mod");
+ for(rows = 0; rows < i; rows++)
+  {
+   for(colum = 0; colum < j; colum++)
+    {
+      printf("\n%d \t ", Add[rows][colum]);
+      printf("%d \t ", Sub[rows][colum]);
+      printf("%d \t ", Mul[rows][colum]);
+      printf("%.2f \t ", Div[rows][colum]);
+      printf("%d \t ", Mod[rows][colum]);
+    }
+  }
+ return 0;
+} 
+
