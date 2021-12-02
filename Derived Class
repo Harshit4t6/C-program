@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+class base1
+{
+    public:
+    
+    void fun1()
+    {
+        cout<<"Hello";
+    }
+};
+class base2
+{
+    public:
+    void fun2()
+    {
+        cout<<"World";
+    }
+};
+
+class derived : public base1 ,base2
+{
+    public:
+    void fun3()
+    {
+        cout<<"Derived Class";
+    }
+};
+int main()
+{
+    derived obj;
+    obj.fun1();
+    obj.fun2();
+    obj.fun3();
+    return 0;
+}
