@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    
+    int stack[100],n,top=-1,a[100],i;
+    cout<<"enter the total number of elements you want to enter in stack: ";
+    cin>>n;
+    int val;
+    {
+        if(top>=n-1)
+        cout<<" Stack Overflow ";
+        else 
+        {
+            for(i=0;i<n;i++)
+            {
+                cout<<"enter element "<<i + 1<<": ";
+                cin>>a[i];
+            }
+            top++;
+            stack[i]=a[i];
+            for(i=0;i<n;i++)
+            {
+                cout<<"value at: "<<i+1<<" is: "<<a[i]<<endl;
+            }
+        }
+     
+    }
+    return 0;
+    }
